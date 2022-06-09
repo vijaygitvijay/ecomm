@@ -34,9 +34,9 @@ phases:
 
       - echo Building the Docker image... 
 
-      - docker build -t $750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:latest . 
+      - docker build -t 750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:latest . 
 
-      - docker tag $750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:latest $750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:$IMAGE_TAG 
+      - docker tag 750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:latest $750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:$IMAGE_TAG 
 
   post_build: 
 
@@ -46,9 +46,9 @@ phases:
 
       - echo Pushing the Docker images... 
 
-      - docker push $750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:latest 
+      - docker push 750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:latest 
 
-      - docker push $750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:$IMAGE_TAG 
+      - docker push 750733973098.dkr.ecr.ap-southeast-1.amazonaws.com/ecr-task:$IMAGE_TAG 
 
       - echo Writing image definitions file... 
 
